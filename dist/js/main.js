@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("модуль One!"),console.log("модуль Two!")})();
