@@ -1,5 +1,5 @@
-import one from './modules/one'
+import telephoneList from './modules/telephoneList'
 import two from './modules/two'
 
-one()
+telephoneList()
 two()
