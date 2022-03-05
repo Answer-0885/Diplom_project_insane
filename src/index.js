@@ -1,5 +1,5 @@
 import telephoneList from './modules/telephoneList'
-import two from './modules/two'
+import burgerMenu from './modules/burgerMenu'
 
 telephoneList()
-two()
+burgerMenu()

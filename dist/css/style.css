@@ -4808,7 +4808,7 @@ div.wave-block:nth-child(17):after {
         width: 549px;
         height: 841px;
         -webkit-transform: translate3d(555px, 0, 0);
-        transform: translate3d(555px, 0, 0);
+        transform: translate3d(645px, 0, 0);
     }
 }
 
@@ -4820,7 +4820,7 @@ div.wave-block:nth-child(17):after {
         border-bottom-left-radius: 100% 17%;
         border-bottom-right-radius: 100% 17%;
         -webkit-transform: translate3d(0, -100vh, 0);
-        transform: translate3d(0, -100vh, 0);
+        transform: translate3d(0, -120vh, 0);
         left: -5%;
     }
 }
