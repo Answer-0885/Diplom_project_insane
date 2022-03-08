@@ -4727,7 +4727,7 @@ div.wave-block:nth-child(17):after {
     height: 624px;
     background: #ffffff;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 @media (max-width: 1024px) {
