@@ -4707,6 +4707,10 @@ div.wave-block:nth-child(17):after {
     z-index: 9999;
 }
 
+.popup-repair-types{
+    visibility: hidden;
+}
+
 @media (max-width: 575px) {
     .popup {
         padding-left: 0;

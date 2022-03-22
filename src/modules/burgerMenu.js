@@ -4,6 +4,7 @@ const burgerMenu = () => {
   const burgerMenu = document.querySelector('.popup-dialog-menu');
   const body = document.querySelector('body');
   const btnUp = document.querySelector('.button-footer');
+  'use strict'
 
   // Открыть бургер меню
   menuIcon.addEventListener('click', () => {
