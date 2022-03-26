@@ -6,6 +6,7 @@ import sendForm from './modules/sendForm'
 
 modal('open-popup-1', 'close', 'popup-repair-types')
 modal('open-popup-2', 'close', 'popup-repair-types')
+modal('link-privacy', 'close', 'popup-privacy')
 
 telephoneList()
 burgerMenu()

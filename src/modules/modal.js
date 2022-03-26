@@ -4,9 +4,10 @@ import {
 } from './helper';
 const modal = (open, close, popUp) => {
   const body = document.querySelector('body');
-  const popup = document.querySelector('.popup-repair-types');
+  //const popup = document.querySelector('.popup-repair-types');
   const burgerMenu = document.querySelector('.popup-dialog-menu');
   const modalOpen = document.querySelectorAll(`.${open}`);
+  const modalClose = document.querySelector(`.${close}`);
   // Модальные окна
   const modal = document.querySelector(`.${popUp}`);
 
@@ -31,12 +32,12 @@ const modal = (open, close, popUp) => {
     });
   });
   //Закрываем модальные окна на крестик или кликнув мимо окна
-  popup.addEventListener('click', (e) => {
-    if (e.target.classList.contains(`${close}`)) {
+  body.addEventListener('click', (e) => {
+    if (e.target.classList.contains('close')) {
       modal.style.visibility = 'hidden';
+      modal.style.opacity = 0;
       body.style.overflow = 'auto';
     };
   });
-
 };
 export default modal

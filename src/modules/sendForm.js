@@ -10,11 +10,16 @@ const sendForm = ({
   const errorText = 'Ошибка...';
   const successText = 'Спасибо! Наш менеджер с вами свяжется.';
 
-
+  //   let check = document.getElementById('checkbox1');
+  //   console.dir(check.checked);
+  //   if (check.checked === true) {
+  //     validate()
+  //   } else {
+  //     console.log('не прошло');
+  //   }
 
   // Проверка инпутов на правильность введённых данных
   const validate = (list) => {
-
     let success = true;
     list.forEach((item) => {
       if (item.classList.contains('feedback-block__form-input_name')) {
@@ -26,7 +31,7 @@ const sendForm = ({
           }, 4000);
         }
       }
-      if (item.classList.contains('feedback-block__form-input_phone')) {
+      if (item.classList.contains('feedback-block__form-input_phone') && check.checked) {
         if (!item.value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{6,}$/gi)) {
           success = false;
           item.classList.add('error');
@@ -35,7 +40,8 @@ const sendForm = ({
           }, 4000);
         }
       }
-      if (item.classList.contains('feedback__input-input')) {
+
+      if (item.classList.contains('feedback__input-input') || item.checked === true) {
         if (!item.value.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{6,}$/gi)) {
           success = false;
           item.classList.add('error');
@@ -48,6 +54,7 @@ const sendForm = ({
 
     return success;
   };
+
   // Имитация работы с сервером
   const sendData = (data) => {
     return fetch('https://jsonplaceholder.typicode.com/posts', {
